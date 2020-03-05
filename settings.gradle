@@ -1,2 +1,2 @@
-include ':app', ':utils'
+include ':app', ':utils', ':and-dev-helper', ':log'
 rootProject.name='AndDevHelper'
