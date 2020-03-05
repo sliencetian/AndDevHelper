@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion configuration.compileSdkVersion
     defaultConfig {
         applicationId "com.anddev.helper"
-        minSdkVersion 19
-        targetSdkVersion 29
+        minSdkVersion configuration.minSdkVersion
+        targetSdkVersion configuration.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -19,4 +19,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
